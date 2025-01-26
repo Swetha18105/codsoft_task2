@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #80cbc4; /* Blue-green background for the body */
+}
+
+.calculator {
+    background-color: #000000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #000; /* Black outer border */
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #767676; /* Black border */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text for better visibility */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #000000; /* Dark gray button background */
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid #767676; /* Blue border */
+    color: #fff; /* White text for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #76767690; /* Light blue on hover */
+}
+
+.btn:active {
+    background-color: #767676; /* Even darker blue when active */
+    transform: scale(0.98); /* Button press effect */
+}
